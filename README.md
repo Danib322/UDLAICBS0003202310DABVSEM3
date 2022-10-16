@@ -15,4 +15,4 @@ Nombre: Daniel Alexander Bustos Velez
 <p>En la carpeta "Util" se encuentra tres archivos el primero permite la conexión con la base de datos</p>
 <p>El segundo carga las los archivos properties y los formatea para utilizarlos en los archivos extrac</p>
 <p>El Tercero se encuentran las funciones que permiten truncar todas las tablas y volver a cargarlos, estas funciones se implementan desde el archivo "startup"</p>
-<p>si se desea ejecutar de manera unitaria las tablas de extración descomentar la tabla en que se de desea probar del archivo "startup" y comentar las funciones "truncarTablas()" y "cargarTablas()"con "#"</p>
+<p>Si se desea ejecutar de manera unitaria las tablas de extración, descomentar la tabla que se de desea probar del archivo "startup" y comentar las funciones "truncarTablas()" y "cargarTablas()"con "#"</p>
