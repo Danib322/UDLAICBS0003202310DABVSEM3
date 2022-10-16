@@ -19,11 +19,12 @@ def stg_config():
 
 """Sor properties"""
 
-configs = Properties()
-with open('properties\sor.properties', 'rb') as sor_config_file:
-    configs.load(sor_config_file)
+
 
 def sor_config():
+    configs = Properties()
+    with open('properties\sor.properties', 'rb') as sor_config_file:
+        configs.load(sor_config_file)
     sor_config={
         'TYPE': configs.get("TYPE").data,
         'HOST':configs.get("DB_HOST").data,

@@ -24,7 +24,6 @@ def truncarTablas():
             raise Exception(f"The give database type {type} is not valid")
         elif ses_db_stg == -2:
             raise Exception("Error trying connect to the database")     
-        ses_db_stg.execute("SET FOREIGN_KEY_CHECKS = 0")
         ses_db_stg.execute("TRUNCATE TABLE channels_ext")
         ses_db_stg.execute("TRUNCATE TABLE countries_ext")
         ses_db_stg.execute("TRUNCATE TABLE customers_ext")
@@ -32,7 +31,6 @@ def truncarTablas():
         ses_db_stg.execute("TRUNCATE TABLE promotions_ext")
         ses_db_stg.execute("TRUNCATE TABLE sales_ext")
         ses_db_stg.execute("TRUNCATE TABLE times_ext")
-        ses_db_stg.execute("SET FOREIGN_KEY_CHECKS = 1")
         ses_db_stg.dispose()
 
 def cargarTablas():
