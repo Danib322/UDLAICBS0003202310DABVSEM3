@@ -44,7 +44,7 @@ def ext_promotions():
                 promotions_dict["promo_begin_date"].append(pbeda)
                 promotions_dict["promo_end_date"].append(penda)
         if promotions_dict["promo_id"]:
-            ses_db_stg.connect().execute("DELETE FROM promotions_ext")
+            ses_db_stg.connect().execute("TRUNCATE TABLE promotions_ext")
             df_promotions_ext = pd.DataFrame(promotions_dict)
             df_promotions_ext.to_sql('promotions_ext', ses_db_stg, if_exists="append",index=False)
     except:

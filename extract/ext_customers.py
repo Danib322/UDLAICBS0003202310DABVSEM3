@@ -68,7 +68,7 @@ def ext_customers():
                 customer_dict["cust_credit_limit"].append(creli)
                 customer_dict["cust_email"].append(email)
         if customer_dict["cust_id"]:
-            ses_db_stg.connect().execute("DELETE FROM customers_ext")
+            ses_db_stg.connect().execute("TRUNCATE TABLE customers_ext")
             df_customer_ext = pd.DataFrame(customer_dict)
             df_customer_ext.to_sql('customers_ext', ses_db_stg, if_exists="append",index=False)
     except:

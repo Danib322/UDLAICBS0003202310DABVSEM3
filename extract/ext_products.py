@@ -59,7 +59,7 @@ def ext_products():
                 products_dict["prod_list_price"].append(plistp)
                 products_dict["prod_min_price"].append(pminp)
         if products_dict["prod_id"]:
-            ses_db_stg.connect().execute("DELETE FROM products_ext")
+            ses_db_stg.connect().execute("TRUNCATE TABLE products_ext")
             df_products_ext = pd.DataFrame(products_dict)
             df_products_ext.to_sql('products_ext', ses_db_stg, if_exists="append",index=False)
     except:
