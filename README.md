@@ -11,12 +11,10 @@ Nombre: Daniel Alexander Bustos Velez
 <p>4. En caso de no tener instalada una libreria que requiera el proyecto puede hacerlo desde terminal con el comando pip install "librería" </p>
 <p>5.Todo listo para ejecutar el proyecto!! </p>
 <h1>Librerias Necesarias para ejecutar el Proyecto</h1>
-<p>Loggin</p>
 <p>Pandas</p>
-<p>Traceback</p>
 <p>sqlalchemy</p>
-<p>DateTime</p>
 <p>jproperties</p>
+<p>PyMySQL</p>
 <h1>Consideraciones Importantes</h1>
 <p>La carpeta properties contiene los archivos ".properties" que son necesarios para el correcto funcionamineot del programa. Al momento de ejecutar en su instancia local caragar los datos de su instancia de MySQL</p>
 <p>En la carpeta "Util" se encuentra tres archivos el primero permite la conexión con la base de datos</p>
