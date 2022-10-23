@@ -1,2 +1,0 @@
-Ingresar código python para Transform
-
