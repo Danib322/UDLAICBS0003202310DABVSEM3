@@ -7,10 +7,10 @@ from trasnform.FuncionesTransformacion import mapeoCountries
 
 try:
 
-    #Funciones que truncan y cargan todas las tablas
+    #Ejecucion del ETL
     
-    #truncarTablas()
-    #cargarTablas()
+    truncarTablas()
+    cargarTablas()
     transform()
     CragarSor()
         
