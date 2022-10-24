@@ -1,10 +1,9 @@
-from datetime import datetime
 import traceback
-
-from sqlalchemy import modifier
-from Util.transformAndLoad import transform
+from Util.transformAndLoad import CragarSor, transform
 from  Util.trucateCreateTables import truncarTablas
 from  Util.trucateCreateTables import cargarTablas
+from trasnform.FuncionesTransformacion import mapeoCountries
+
 
 try:
 
@@ -13,7 +12,8 @@ try:
     #truncarTablas()
     #cargarTablas()
     transform()
-    
+    CragarSor()
+        
     
 
 except:
