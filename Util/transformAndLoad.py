@@ -17,6 +17,7 @@ from trasnform.tran_customers import tran_customers
 from Util.revisionETL import etl_version
 
 revisonId=etl_version()
+print("Proceso de ETL:",revisonId )
 def transform():
         
         tran_channels(revisonId)
